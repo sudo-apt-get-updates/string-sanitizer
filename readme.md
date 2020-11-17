@@ -1,6 +1,6 @@
 # Update
 
-Updated in order to allow you to also keep commas with the spaces
+Updated in order to allow you to also keep commas with the spaces, as well as comma with spaces and period.
 
 # String Sanitizer
 
