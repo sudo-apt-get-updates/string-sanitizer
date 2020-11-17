@@ -13,7 +13,7 @@ exports.sanitize.keepSpace = function(str) {
   return str2.replace(/ /g, " ");
 };
 
-exports.sanitize.keepComma = function(str) {
+exports.sanitize.keepSpaceAndComma = function(str) {
   var str2 = str.replace(/[`~!@#$%^&*()_|+\-=?;:'".<>\{\}\[\]\\\/]/gi, "");
   return str2.replace(/ /g, " ");
 };
