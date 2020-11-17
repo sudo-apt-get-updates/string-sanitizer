@@ -1,3 +1,7 @@
+# Update
+
+Updated in order to allow you to also keep commas with the spaces
+
 # String Sanitizer
 
 An intuitive & tiny string sanitizer to remove any special characters or convert strings to create filename or url 🎉🎉
@@ -38,6 +42,7 @@ var string = require("string-sanitizer");
 
 string.sanitize("a.bc@d efg#h"); // abcdefgh
 string.sanitize.keepSpace("a.bc@d efg#h"); // abcd efgh
+string.sanitize.keepComma("a,bc@d efg#h"); // a,bcd efgh
 string.sanitize.keepUnicode("a.bc@d efg#hক"); // abcd efghক
 string.sanitize.addFullstop("a.bc@d efg#h"); // abcd.efgh
 string.sanitize.addUnderscore("a.bc@d efg#h"); // abcd_efgh
