@@ -18,6 +18,11 @@ exports.sanitize.keepSpaceAndComma = function(str) {
   return str2.replace(/ /g, " ");
 };
 
+exports.sanitize.keepSpaceCommaAndPeriod = function(str) {
+  var str2 = str.replace(/[`~!@#$%^&*()_|+\-=?;:'"<>\{\}\[\]\\\/]/gi, "");
+  return str2.replace(/ /g, " ");
+};
+
 exports.sanitize.addFullstop = function(str) {
   var str2 = str.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, "");
   return str2.replace(/ /g, ".");
