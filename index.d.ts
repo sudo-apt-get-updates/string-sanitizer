@@ -3,6 +3,8 @@ type TSanitizer = (s: string) => string;
 interface ISanitize extends TSanitizer {
   keepUnicode: TSanitizer;
   keepSpace: TSanitizer;
+  keepSpaceAndComma: TSanitizer;
+  keepSpaceCommaAndPeriod: TSanitizer;
   addFullstop: TSanitizer;
   addUnderscore: TSanitizer;
   addDash: TSanitizer;
